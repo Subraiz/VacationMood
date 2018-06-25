@@ -16,7 +16,11 @@ module.exports = {
       provider: function() {
         return new HDWalletProvider(testnetMnemonic, "https://ropsten.infura.io/F5xdDA6sjrIgRJNUivmc")
       },
-      network_id: 3
+      host: 'localhost',
+      port: 8545,
+      network_id: 3,
+      gas: 7900000,
+      gasPrice: 21000000000
     },
     mainnet: {
       provider: function() {
