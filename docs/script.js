@@ -42,12 +42,11 @@ window.onload = () => {
 
   function loadABI() {
     return new Promise(function(resolve, reject) {
-      fetch("../build/contracts/VacationMood.json")
+      fetch("./build/contracts/VacationMood.json")
       .then(r => r.json())
       .then(json => {
         abi = json.abi;
         resolve(abi);
-        console.log(abi);
       });
     });
   }
