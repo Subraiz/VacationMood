@@ -81,10 +81,10 @@ window.onload = () => {
           // Here we show the consfirmation message
           confirmationElement.style.opacity = 1;
           confirmationElement.style.visibility = 'visible';
-          confirmationSuccessElement.style.display = "flex";
-          confirmationSuccessElement.style.width = 'auto';
-          confirmationSuccessElement.style.height = 'auto';
-          confirmationSuccessElement.style.margin = 'auto';
+          confirmationErrorElement.style.display = "inLine";
+          confirmationErrorElement.style.width = '1000px';
+          confirmationErrorElement.style.height = '500px';
+          confirmationErrorElement.style.margin = '0px 0px 400px 0px';
         }
 
         else {
@@ -93,10 +93,10 @@ window.onload = () => {
           var confirmationErrorElement = document.getElementById('confirmation').getElementsByClassName("status error")[0];
           confirmationElement.style.opacity = 1;
           confirmationElement.style.visibility = 'visible';
-          confirmationErrorElement.style.display = "flex";
-          confirmationErrorElement.style.width = 'auto';
-          confirmationErrorElement.style.height = 'auto';
-          confirmationErrorElement.style.margin = 'auto';
+          confirmationErrorElement.style.display = "inLine";
+          confirmationErrorElement.style.width = '1000px';
+          confirmationErrorElement.style.height = '500px';
+          confirmationErrorElement.style.margin = '0px 0px 400px 0px';
         }
         console.log(err ? err : result);
 
