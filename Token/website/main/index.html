@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="main.css"/>
-    <script src="../../node_modules/web3/dist/web3.min.js"></script>
     <title>Vacation Mood Collectible Token</title>
 </head>
 <body>
@@ -35,61 +34,8 @@
           <p class="error-message"></p>
         </div>
       </div>
+      <script src="./main.js"></script>
 
-
-
-
-      <script type="text/javascript">
-        window.onload = () => {
-          var contract = null;
-          var abi = null;
-          var contractAddress = "0x4de397226ecf480d7ea1873f7ee0295c4616cf22";
-          var account = null;
-          //var Web3 = require('web3');
-          if (typeof web3 !== 'undefined') {
-            web3 = new Web3(web3.currentProvider);
-          } else {
-            // set the provider you want from Web3.providers
-            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
-            web3 = new Web3(web3.currentProvider);
-          }
-
-          function loadABI() {
-            return new Promise(function(resolve, reject) {
-              fetch("../../build/contracts/VacationMood.json")
-              .then(r => r.json())
-              .then(json => {
-                abi = json.abi;
-                resolve(abi);
-              });
-            });
-          }
-
-        function getTokens() {
-          var account = web3.eth.accounts[0];
-
-          this.contract.tokenOfOwnerByIndex.call(account, 0, (err, result) => {
-            if(err) {
-              console.log(err);
-              return;
-            }
-
-            console.log(result.valueOf());
-          });
-        }
-
-        loadABI().then(a => {
-            contract = web3.eth.contract(abi).at(contractAddress);
-            console.log("Loaded contract...");
-
-            getTokens();
-          });
-      }
-
-      </script>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="main.js"></script>
 
 </body>
 </html>
