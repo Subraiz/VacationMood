@@ -14,7 +14,7 @@ window.onload = () => {
 
   var contract = null;
   var abi = null;
-  var contractAddress = "0x819dfbf2413771b7266d602714135939d823c24b";
+  var contractAddress = "0x819dfBf2413771B7266d602714135939D823c24B";
   var account = null;
 
   if (typeof web3 !== 'undefined') {
