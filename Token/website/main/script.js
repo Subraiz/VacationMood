@@ -1,6 +1,11 @@
 window.onload = () => {
 
-  console.log("Git Test 3");
+  $('.landingPage').hide(10).fadeIn(2000, function() {
+    //Stuff to do *after* the animation takes place
+  })
+  $('button').hide(10).slideDown(600, function() {
+    //Stuff to do *after* the animation takes place
+  })
 
   let button = document.querySelector('button');
   button.addEventListener('click', () => {
@@ -33,7 +38,7 @@ window.onload = () => {
   function mint() {
     var account = web3.eth.accounts[0];
 
-    this.contract.mintTo(account, "https://www.alicetoken.com/api/1",  {from: account, gas : 250000 }, (err, result) => {
+    contract.mintTo(account, "https://www.alicetoken.com/api/1",  {from: account, gas : 250000 }, (err, result) => {
 
         if(result){
 
@@ -82,13 +87,13 @@ window.onload = () => {
     });
 
     // Here we hide the button after minting the token.
-    document.getElementById('getTokenButton').style.visibility='hidden';
+    document.getElementById('getToken').style.visibility='hidden';
 }
 
   function getTokens() {
     var account = web3.eth.accounts[0];
 
-    this.contract.tokenOfOwnerByIndex.call(account, 0, (err, result) => {
+    contract.tokenOfOwnerByIndex.call(account, 0, (err, result) => {
       if(err) {
         console.log(err);
         return;
@@ -100,8 +105,11 @@ window.onload = () => {
 
   loadABI().then(a => {
     contract = web3.eth.contract(abi).at(contractAddress);
-    console.log(contract);
-    console.log("Loaded contract...");
+    if(contract !== null){
+      console.log("Log the contract on next line: ");
+      console.log(contract);
+      console.log("Contract has been loaded");
+    }
     getTokens();
   });
 
