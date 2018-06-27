@@ -20,10 +20,26 @@ window.onload = () => {
   if (typeof web3 !== 'undefined') {
     web3 = new Web3(web3.currentProvider);
   } else {
+    console.log("Else");
     // set the provider you want from Web3.providers
-    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
-    web3 = new Web3(web3.currentProvider);
+    var web3Provider = new web3.providers.HttpProvider('http://127.0.0.1:7545');
+    web3 = new Web3(web3Provider);
+
+    //Here we create the confirmation and ebooks URLs and construct the links
+    var metamaskURL = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+    var metamaskLink = "<a style='text-decoration: none; border-bottom: 1px solid #8bacb9; color: #8bacb9;' target= '_blank' href=' " + metamaskURL + " ' >Chrome Web Store</a> ";
+      // Update the note about metamask
+    var metamaskElement = document.getElementById('metamask');
+    var metamaskNoMetamaskElement = document.getElementById('metamask').getElementsByClassName("status noMetamask")[0];
+    metamaskNoMetamaskElement.querySelector('.note').innerHTML =
+    'To download Metamask, head to the ' + metamaskLink +
+    '. Once downloaded create an account and store the seed phrase. After, you can retrieve your token.';
+    //document.getElementById('getTokenButton').style.visibility='hidden';
+    metamaskElement.style.visibility = 'visible';
+    metamaskElement.style.opacity = 1;
+    metamaskNoMetamaskElement.style.display = "flex";
   }
+
   function loadABI() {
     return new Promise(function(resolve, reject) {
       fetch("../build/contracts/VacationMood.json")
@@ -87,7 +103,7 @@ window.onload = () => {
     });
 
     // Here we hide the button after minting the token.
-    document.getElementById('getToken').style.visibility='hidden';
+    //document.getElementById('getToken').style.visibility='hidden';
 }
 
   function getTokens() {
