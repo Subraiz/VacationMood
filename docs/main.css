@@ -44,7 +44,7 @@ body {
   max-width: 75%;
   height: 350px;
   margin: 100px auto;
-  background: orange url(./v1/orange.png) 37px center no-repeat;
+  background: orange url(v1/orange.png) 37px center no-repeat;
   box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
   border-radius: 6px;
   border: 2px solid #8bacb9;
@@ -103,7 +103,7 @@ body {
   max-width: 75%;
   height: 350px;
   margin: 100px auto;
-  background: orange url(./v1/orange.png) 37px center no-repeat;
+  background: orange url(v1/orange.png) 37px center no-repeat;
   box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
   border-radius: 6px;
   border: 2px solid #8bacb9;
@@ -176,7 +176,7 @@ body {
     width: auto;
     height: auto;
     padding: 120px 15px 15px;
-    background: orange url(./v1/orange.png) center 20px no-repeat;
+    background: orange url(v1/orange.png) center 20px no-repeat;
     background-size: 68px 86px;
     box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
     border-radius: 6px;
