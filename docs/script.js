@@ -47,6 +47,7 @@ window.onload = () => {
       .then(json => {
         abi = json.abi;
         resolve(abi);
+        console.log(abi);
       });
     });
   }
