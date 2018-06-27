@@ -82,9 +82,9 @@ window.onload = () => {
           confirmationElement.style.opacity = 1;
           confirmationElement.style.visibility = 'visible';
           confirmationErrorElement.style.display = "inLine";
-          confirmationErrorElement.style.width = '1000px';
-          confirmationErrorElement.style.height = '500px';
-          confirmationErrorElement.style.margin = '0px 0px 400px 0px';
+          confirmationErrorElement.style.width = 'auto';
+          confirmationErrorElement.style.height = 'auto';
+          confirmationErrorElement.style.margin = '0px 0px 800px 0px';
         }
 
         else {
@@ -94,9 +94,9 @@ window.onload = () => {
           confirmationElement.style.opacity = 1;
           confirmationElement.style.visibility = 'visible';
           confirmationErrorElement.style.display = "inLine";
-          confirmationErrorElement.style.width = '1000px';
-          confirmationErrorElement.style.height = '500px';
-          confirmationErrorElement.style.margin = '0px 0px 400px 0px';
+          confirmationErrorElement.style.width = 'auto';
+          confirmationErrorElement.style.height = 'auto';
+          confirmationErrorElement.style.margin = '0px 0px 1200px 0px';
         }
         console.log(err ? err : result);
 

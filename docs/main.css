@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 1900px;
+  top: 1500px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -47,7 +47,7 @@ body {
   background: orange 37px center no-repeat;
   box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
   border-radius: 6px;
-  border: 2px solid #8bacb9;
+  border: 2px solid cyan;
 }
 
 #confirmation .status.error {
@@ -157,7 +157,7 @@ body {
 @media only screen and (max-width: 800px) {
   #confirmation .status {
     width: auto;
-    height: auto;
+    height: 1000px;
     margin: auto;
   }
 }
