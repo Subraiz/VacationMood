@@ -79,12 +79,7 @@ window.onload = () => {
           ' and download the ' + ebookLink + '.';
 
           // Here we show the consfirmation message
-          confirmationElement.style.opacity = 1;
-          confirmationElement.style.visibility = 'visible';
-          confirmationErrorElement.style.display = "inLine";
-          confirmationErrorElement.style.width = 'auto';
-          confirmationErrorElement.style.height = 'auto';
-          confirmationErrorElement.style.margin = '0px 0px 800px 0px';
+          console.log("Success you have bought the coin!");
         }
 
         else {
