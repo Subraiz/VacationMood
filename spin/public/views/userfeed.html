@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+<div id="main" class="d-flex flex-column align-items-center" style="height: 100%;">
+  <div class="row w-100">
+    <div class="col">
+      <div id="pageTitle" class="flex-grow-1">
+        <div id="text-title">
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="row w-100">
+    <div class="col-md-3">
+      <div id="summary">
+        <h4 class="flex-grow-1">Summary</h4>
+        <div id="eth-balance" class="flex-grow-1"></div>
+        <div id="num-transactions" class="flex-grow-1"></div>
+        <div id="gas-prices" class="flex-grow-1"></div>
+
+        <hr>
+        <div id="tokens" class="flex-grow-1">
+          <h4>Tokens</h4>
+        </div>
+
+        <hr>
+        <div id="saved_addresses" class="flex-grow-1">
+          <h4>Bookmarks</h4>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div id="no-web3-msg" class="error-msg">
+        <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+          <div class="row">
+            <div class="col">
+              <h1>No Ethereum provider found.<br> Please install and access via:<br><br> <a href="https://metamask.io/">MetaMask</a> (browser)<br> <a href="https://www.toshi.org/">Toshi</a> (mobile).<br><br>
+              </h1>
+            </div>
+          </div>
+          <img src="/images/alice4.png"></img>
+        </div>
+      </div>
+
+      <div id="no-accounts-msg" class="error-msg">
+        <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+          <div class="row">
+            <div class="col">
+              <h1>No wallet addresses found.<br><br>
+                Are you logged into MetaMask?
+              </h1>
+            </div>
+          </div>
+          <img src="/images/alice4.png"></img>
+        </div>
+      </div>
+
+      <div id="no-events-msg" class="error-msg">
+        <div class="flex-grow-1 d-flex flex-column align-items-center justify-content-center" style="width: 100%;">
+          <div class="row">
+            <div class="col">
+              <h1>No Collectibles Activity Found :(<br><br>
+                Get started by going to <a href="https://www.alicetoken.com">www.alicetoken.com</a>
+              </h1>
+            </div>
+          </div>
+          <img src="/images/alice4.png"></img>
+        </div>
+      </div>
+
+      <div id="timeline-log" class="flex-grow-1">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block script_area %}
+<script src="/js/NFTControllers.js"></script>
+<script src="/userfeed/timeline.js"></script>
+<script>
+var userAddress = null
+var userBookmarks = null
+
+{% if usrAddr %}
+userAddress = {{ usrAddr | dump | safe }}
+{% endif %}
+
+{% if usrBook %}
+userBookmarks = {{ usrBook | dump | safe }}
+{% endif %}
+
+</script>
+{% endblock %}
