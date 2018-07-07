@@ -144,7 +144,7 @@ body {
 #randomize .row {
   width: 400px;
   height: 300px;
-  padding-right: 30px;
+  padding-right: 1.5em;
 
   position: relative;
   top: 23em;
