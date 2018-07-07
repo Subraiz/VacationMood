@@ -142,15 +142,15 @@ body {
 }
 
 #randomize .row {
-  margin-top: 370px;
-  width: 370px;
+  width: 400px;
   height: 300px;
+  padding-right: 30px;
 
-  position: absolute;
-  top: 390px;
-  bottom: 0;
-  left: 0;
-  right: 25px;
+  position: relative;
+  top: 300px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 
   margin: auto;
 }
@@ -231,9 +231,9 @@ body {
 }
 
 button {
-  position: absolute;
-  top: 1000px;
-  left: 0px;
+  position: relative;
+  top: 800px;
+  left: 500px;
   right: 0;
   bottom: 0;
   margin: auto;
