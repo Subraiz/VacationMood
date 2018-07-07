@@ -147,7 +147,7 @@ body {
   padding-right: 30px;
 
   position: relative;
-  top: 360px;
+  top: 23em;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -232,7 +232,7 @@ body {
 
 button {
   position: absolute;
-  top: 60em;
+  top: 65em;
   left: 0px;
   right: 0;
   bottom: 0;
