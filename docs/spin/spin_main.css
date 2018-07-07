@@ -232,13 +232,13 @@ body {
 
 button {
   position: absolute;
-  top: 62em;
+  top: 1000px;
   left: 0px;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 270px;
-  height: 70px;
+  width: 130px;
+  height: 40px;
 }
 
 .randomizeMachine {
