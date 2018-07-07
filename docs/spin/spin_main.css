@@ -16,7 +16,7 @@ body {
   width: 400px;
   margin-left: -200px;
   height: auto;
-  left: 50%;
+  left: 30%;
   top: 0;
 }
 
@@ -142,12 +142,11 @@ body {
 }
 
 #randomize .row {
-  width: 400px;
-  height: 300px;
-  padding-right: 1.5em;
+  width: 380px;
+  height: 460px;
 
   position: relative;
-  top: 23em;
+  top: 393px;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -232,12 +231,12 @@ body {
 
 button {
   position: absolute;
-  top: 1000px;
+  top: 1100px;
   left: 0px;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 130px;
+  width: 140px;
   height: 40px;
 }
 
@@ -251,7 +250,7 @@ button {
 }
 
 #contract .container img {
-  width: 400px;
+  width: 420px;
   margin-left: -200px;
   height: auto;
   position: absolute;
