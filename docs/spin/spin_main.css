@@ -135,6 +135,7 @@ body {
 /* SlotMachine */
 
 #randomize .row {
+  padding-right: 6px;
   width: 350px;
   height: auto;
 
