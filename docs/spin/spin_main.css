@@ -145,9 +145,14 @@ body {
   margin-top: 370px;
   width: 370px;
   height: 300px;
-  padding-right: 5px;
-  margin-left: 32.35%;
-  margin-right: auto;
+
+  position: absolute;
+  top: 390px;
+  bottom: 0;
+  left: 0;
+  right: 25px;
+
+  margin: auto;
 }
 
 #randomize .row > div.col-4 > div {
@@ -227,8 +232,11 @@ body {
 
 button {
   position: absolute;
-  top: 792px;
-  left: 39.43%;
+  top: 1000px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   width: 270px;
   height: 70px;
 }
