@@ -136,7 +136,7 @@ body {
 .container .btn {
   position: absolute;
   top: 830px;
-  left: 45%;
+  left: 65%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: #e6853b;
