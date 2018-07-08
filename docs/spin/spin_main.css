@@ -135,14 +135,14 @@ body {
 /* SlotMachine */
 
 #randomize .row {
-  padding-right: 6px;
-  width: 350px;
+  padding-right: 60px;
+  width: 400px;
   height: auto;
 
   position: relative;
   top: 355px;
   bottom: 0px;
-  left: 0px;
+  left: 6px;
   right: 0px;
 
   margin: auto;
@@ -224,10 +224,11 @@ body {
 }
 
 button {
+  background-color: grey;
   position: absolute;
-  top: 55em;
+  top: 39em;
   left: 0px;
-  right: 0;
+  right: 25px;
   bottom: 0;
   margin: auto;
   width: 140px;
@@ -240,12 +241,12 @@ button {
 }
 
 .btn:hover {
-  background-color: red;
+  background-color: lightgrey;
 }
 
 #contract .container img {
   width: 380px;
-  margin-left: -180px;
+  margin-left: -200px;
   height: auto;
   position: absolute;
   left: 50%;
