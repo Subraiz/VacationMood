@@ -1,0 +1,285 @@
+body {
+  background-color: #eb3a0b;
+}
+
+/*.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+*/
+
+/* Landing Page */
+
+.landing img {
+  position: absolute;
+  width: 400px;
+  margin-left: -200px;
+  height: auto;
+  left: 50%;
+  top: 0;
+}
+
+/* Order Confirmation */
+
+#confirmation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2028px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: system-ui;
+  opacity: 0;
+  background: #777f91;
+  text-align: left;
+  transition: visibility 0s, opacity 0.5s linear 0.5s;
+}
+
+#confirmation h3 {
+  font-size: 42px;
+  font-weight: 400;
+  color: #e5b572;
+  letter-spacing: 0.3px;
+  margin-top: 60px;
+}
+
+#confirmation .status {
+  color: #e5b572;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 75px 0 275px;
+
+  height: 350px;
+  margin: 100px auto;
+  background: #777f91 url(/images/alice.jpeg) 40px center no-repeat;
+  box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
+  border-radius: 6px;
+  border: 2px solid #e5b572;
+}
+
+#confirmation .status.error {
+  display: none;
+}
+
+#confirmation .status.success {
+  display: none;
+}
+
+#confirmation .status p {
+  margin: 0 0 15px;
+}
+
+#confirmation .status li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+/* Metamask Confirmation */
+
+#metamask {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: system-ui;
+  opacity: 1;
+  background: #777f91;
+  text-align: left;
+  transition: visibility 0s, opacity 0.5s linear 0.5s;
+}
+
+#metamask h3 {
+  font-size: 42px;
+  font-weight: 400;
+  color: #e5b572;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px;
+}
+
+#metamask .status {
+  color: #e5b572;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 75px 0 275px;
+  max-width: 50%;
+  height: 350px;
+  margin: 100px auto;
+  background: #777f91 url(/images/alice.jpeg) 37px center no-repeat;
+  box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
+  border-radius: 6px;
+  border: 2px solid #e5b572;
+}
+
+#metamask .status.noMetamask {
+  display: none;
+}
+
+#metamask .status p {
+  margin: 0 0 15px;
+}
+
+#metamask .status li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+/* SlotMachine */
+
+#randomize {
+  background-color: #eb3a0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#randomize .row {
+  margin-top: 1100px;
+  width: 335px;
+  height: 310px;
+  padding-right: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#randomize .row > div.col-4 > div {
+  color: #e5b572;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 93px;
+  height: 165px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 3px;
+  border: 2px solid #e5b572;
+}
+
+#randomize .row > div.col-lg-4 > div {
+  color: #e5b572;
+  padding: 4px;
+  width: 93px;
+  height: 165px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 3px;
+  border: 2px solid #e5b572;
+}
+
+#randomize .row > div.col-md-4 > div {
+  color: #e5b572;
+  padding: 4px;
+  width: 93px;
+  height: 165px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid #e5b572;
+}
+
+#randomize .row > div.col-sm-4 > div {
+  color: #e5b572;
+  padding: 4px;
+  width: 93px;
+  height: 165px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid #e5b572;
+}
+
+#randomize .row > div.col-xs-4 > div {
+  color: #e5b572;
+  padding: 4px;
+  width: 93px;
+  height: 165px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin: auto;
+  display: block;
+  border-radius: 6px;
+  border: 2px solid #e5b572;
+}
+
+#randomize .container img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+button {
+  position: absolute;
+  top: 792px;
+  left: 50%;
+  width: 270px;
+  height: 70px;
+}
+
+.randomizeMachine {
+  width: 85px;
+  height: 150px;
+}
+
+.btn:hover {
+  background-color: red;
+}
+
+#contract .container img {
+  width: 400px;
+  margin-left: -200px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+  #confirmation .status {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  p.instruction {
+    margin-top: -12px;
+    font-size: 14px;
+  }
+  p.tip {
+    margin-bottom: 0;
+    font-size: 13px;
+  }
+
+  #confirmation .status {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 120px 15px 15px;
+    background: #777f91 url(/images/alice.jpeg) center 20px no-repeat;
+    background-size: 68px 86px;
+    box-shadow: 0 1px 3px 0 rgba(50, 50, 93, 0.15);
+    border-radius: 6px;
+  }
+  #confirmation h3 {
+    text-align: center;
+  }
+}
