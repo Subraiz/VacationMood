@@ -135,14 +135,15 @@ body {
 /* SlotMachine */
 
 #randomize .row {
-  padding-right: 60px;
-  width: 400px;
+  background-color: ;
+  padding-right: 25px;
+  width: 370px;
   height: auto;
 
   position: relative;
-  top: 355px;
+  top: 370px;
   bottom: 0px;
-  left: 6px;
+  left: 1px;
   right: 0px;
 
   margin: auto;
@@ -226,9 +227,9 @@ body {
 button {
   background-color: grey;
   position: absolute;
-  top: 39em;
+  top: 42em;
   left: 0px;
-  right: 25px;
+  right: 0px;
   bottom: 0;
   margin: auto;
   width: 140px;
@@ -245,7 +246,7 @@ button {
 }
 
 #contract .container img {
-  width: 380px;
+  width: 400px;
   margin-left: -200px;
   height: auto;
   position: absolute;
