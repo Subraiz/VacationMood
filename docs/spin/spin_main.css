@@ -217,11 +217,12 @@ body {
 button {
   background-color: orange;
   position: absolute;
-  top: 105%;
-  left: 0px;
-  right: 0px;
+  top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
+  margin-top: 800px;
   width: 140px;
   height: 40px;
 }
