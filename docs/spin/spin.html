@@ -94,44 +94,43 @@
    <button id="getTokenButton" type="button" class="btn">ROLL!</button>
 
    <script>
-const btn = document.querySelector('#getTokenButton');
+   const btn = document.querySelector("#getTokenButton");
 var wheelSound = new Audio("sounds/wheelsound.mp3");
 function stopAudio(audio) {
-   audio.pause();
-   audio.currentTime = 0;
+  audio.pause();
+  audio.currentTime = 0;
 }
 
 const results = {
- machine1: document.querySelector('#machine1Result'),
- machine2: document.querySelector('#machine2Result'),
- machine3: document.querySelector('#machine3Result')
+  machine1: document.querySelector("#machine1Result"),
+  machine2: document.querySelector("#machine2Result"),
+  machine3: document.querySelector("#machine3Result")
 };
-const element1 = document.querySelector('#machine1');
-const element2 = document.querySelector('#machine2');
-const element3 = document.querySelector('#machine3');
+const element1 = document.querySelector("#machine1");
+const element2 = document.querySelector("#machine2");
+const element3 = document.querySelector("#machine3");
 
 const randomQuantity = (min, max) => {
- min = Math.ceil(min);
- max = Math.floor(max);
- return Math.floor(Math.random() * (max - min + 1)) + min;
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 const machine1 = new SlotMachine(element1, { active: randomQuantity(0, 4) });
 const machine2 = new SlotMachine(element2, { active: randomQuantity(0, 4) });
 const machine3 = new SlotMachine(element3, { active: randomQuantity(0, 4) });
 
-function onComplete(active){}
+function onComplete(active) {}
 
-btn.addEventListener('click', () => {
- wheelSound.play();
- setTimeout(() => machine1.shuffle(40, onComplete, randomize), 1000);
- setTimeout(() => machine2.shuffle(45, onComplete, randomize), 1500);
- setTimeout(() => machine3.shuffle(52, onComplete, randomize), 2000);
- setTimeout(() => stopAudio(wheelSound), 12000);
- setTimeout(() => mint(), 12000);
-
+btn.addEventListener("click", () => {
+  wheelSound.play();
+  setTimeout(() => machine1.shuffle(40, onComplete, randomize), 1000);
+  setTimeout(() => machine2.shuffle(45, onComplete, randomize), 1500);
+  setTimeout(() => machine3.shuffle(52, onComplete, randomize), 2000);
+  setTimeout(() => stopAudio(wheelSound), 12000);
+  setTimeout(() => mint(), 12000);
 });
-   </script>
+</script>
 
 
  </body>
