@@ -139,7 +139,7 @@ body {
   height: auto;
 
   position: relative;
-  top: 370px;
+  top: 330px;
   bottom: 0px;
   left: -12px;
   right: 0px;
@@ -214,17 +214,19 @@ body {
   max-height: 240%;
 }
 
-button {
+#getTokenButton {
   background-color: orange;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+
+.tokenButton {
+  position: relative;
   margin: auto;
-  margin-top: 800px;
-  width: 140px;
-  height: 40px;
+  top: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
 }
 
 .randomizeMachine {
