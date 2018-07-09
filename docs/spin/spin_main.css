@@ -135,23 +135,21 @@ body {
 /* SlotMachine */
 
 #randomize .row {
-  background-color: ;
-  padding-right: 25px;
-  width: 370px;
+  width: 345px;
   height: auto;
 
   position: relative;
   top: 370px;
   bottom: 0px;
-  left: 1px;
+  left: 370px;
   right: 0px;
 
-  margin: auto;
+  margin: 0;
 }
 
 #randomize .row > div.col-4 > div {
   color: #e5b572;
-  padding: 4px;
+  padding: 0px;
   width: 120px;
   height: 250px;
   background: white;
@@ -159,13 +157,11 @@ body {
   margin-right: auto;
   margin: auto;
   display: block;
-  border-radius: 3px;
-  border: 2px solid grey;
 }
 
 #randomize .row > div.col-lg-4 > div {
   color: #e5b572;
-  padding: 4px;
+  padding: 0px;
   width: 120px;
   height: 250px;
   background: white;
@@ -173,13 +169,11 @@ body {
   margin-right: auto;
   margin: auto;
   display: block;
-  border-radius: 3px;
-  border: 2px solid grey;
 }
 
 #randomize .row > div.col-md-4 > div {
   color: #e5b572;
-  padding: 4px;
+  padding: px;
   width: 120px;
   height: 250px;
   background: white;
@@ -187,13 +181,11 @@ body {
   margin-right: auto;
   margin: auto;
   display: block;
-  border-radius: 3px;
-  border: 2px solid grey;
 }
 
 #randomize .row > div.col-sm-4 > div {
   color: #e5b572;
-  padding: 4px;
+  padding: 0px;
   width: 120px;
   height: 250px;
   background: white;
@@ -201,33 +193,31 @@ body {
   margin-right: auto;
   margin: auto;
   display: block;
-  border-radius: 3px;
-  border: 2px solid grey;
 }
 
 #randomize .row > div.col-xs-4 > div {
   color: #e5b572;
-  padding: 4px;
+  padding: 3px;
   width: 110px;
   height: 250px;
   background: white;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
-  margin: auto;
+  margin: 0;
   display: block;
   border-radius: 3px;
   border: 2px solid grey;
 }
 
 #randomize .container img {
-  max-width: 160%;
-  max-height: 175%;
+  max-width: 100%;
+  max-height: 240%;
 }
 
 button {
   background-color: grey;
   position: absolute;
-  top: 42em;
+  top: 680px;
   left: 0px;
   right: 0px;
   bottom: 0;
@@ -237,6 +227,7 @@ button {
 }
 
 .randomizeMachine {
+  float: left;
   width: 100px;
   height: 240px;
 }
