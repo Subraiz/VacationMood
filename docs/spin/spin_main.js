@@ -1,5 +1,5 @@
 window.onload = () => {
-  $(".landingPage")
+  $(".container")
     .hide(10)
     .fadeIn(2000, function() {
       //Stuff to do *after* the animation takes place
