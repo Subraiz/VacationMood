@@ -141,10 +141,10 @@ body {
   position: relative;
   top: 370px;
   bottom: 0px;
-  left: 370px;
+  left: -12px;
   right: 0px;
 
-  margin: 0;
+  margin: auto;
 }
 
 #randomize .row > div.col-4 > div {
