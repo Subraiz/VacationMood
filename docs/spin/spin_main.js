@@ -5,6 +5,16 @@ window.onload = () => {
       //Stuff to do *after* the animation takes place
     });
 
+  let btn = document.querySelector("button");
+  btn.addEventListener("click", () => {
+    wheelSound.play();
+    setTimeout(() => machine1.shuffle(40, onComplete, randomize), 1000);
+    setTimeout(() => machine2.shuffle(45, onComplete, randomize), 1500);
+    setTimeout(() => machine3.shuffle(52, onComplete, randomize), 2000);
+    setTimeout(() => stopAudio(wheelSound), 12000);
+    setTimeout(() => mint(), 12000);
+  });
+
   var contract = null;
   var abi = null;
   var contractAddress = "0xf75449c311af9ae61207fa9c8c35aed30b0871a8";

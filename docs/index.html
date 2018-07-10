@@ -136,15 +136,6 @@ const machine2 = new SlotMachine(element2, { active: randomQuantity(0, 4) });
 const machine3 = new SlotMachine(element3, { active: randomQuantity(0, 4) });
 
 function onComplete(active) {}
-
-btn.addEventListener("click", () => {
-  wheelSound.play();
-  setTimeout(() => machine1.shuffle(40, onComplete, randomize), 1000);
-  setTimeout(() => machine2.shuffle(45, onComplete, randomize), 1500);
-  setTimeout(() => machine3.shuffle(52, onComplete, randomize), 2000);
-  setTimeout(() => stopAudio(wheelSound), 12000);
-  setTimeout(() => mint(), 12000);
-});
 </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
