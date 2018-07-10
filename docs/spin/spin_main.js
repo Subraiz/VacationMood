@@ -91,19 +91,13 @@ window.onload = () => {
           var confirmationSuccessElement = document
             .getElementById("confirmation")
             .getElementsByClassName("status success")[0];
-          confirmationElement.querySelector(".note").innerHTML =
-            "We just sent it to your address, please look at your " +
-            confirmationLink +
-            " and download the " +
-            ebookLink +
-            ".";
 
           // Here we show the consfirmation message
           $(".status.success")
-            .slideDown(1000, function() {
+            .slideDown(300, function() {
               //Stuff to do *after* the animation takes place
             })
-            .delay(3000)
+            .delay(10000)
             .slideUp(1500, function() {
               //Stuff to do *after* the animation takes place
             });
@@ -112,10 +106,10 @@ window.onload = () => {
           //Here we show the error message
           console.log("Denied");
           $(".status.error")
-            .slideDown(1000, function() {
+            .slideDown(200, function() {
               //Stuff to do *after* the animation takes place
             })
-            .delay(2000)
+            .delay(10000)
             .slideUp(1500, function() {
               //Stuff to do *after* the animation takes place
             });
