@@ -1,7 +1,7 @@
 window.onload = () => {
   $(".container")
     .hide(10)
-    .fadeIn(2000, function() {
+    .fadeIn(1000, function() {
       //Stuff to do *after* the animation takes place
     });
 
@@ -94,7 +94,7 @@ window.onload = () => {
 
           // Here we show the consfirmation message
           $(".status.success")
-            .slideDown(300, function() {
+            .slideDown(500, function() {
               //Stuff to do *after* the animation takes place
             })
             .delay(10000)
@@ -106,7 +106,7 @@ window.onload = () => {
           //Here we show the error message
           console.log("Denied");
           $(".status.error")
-            .slideDown(200, function() {
+            .slideDown(500, function() {
               //Stuff to do *after* the animation takes place
             })
             .delay(10000)
