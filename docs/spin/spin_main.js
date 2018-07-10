@@ -5,11 +5,6 @@ window.onload = () => {
       //Stuff to do *after* the animation takes place
     });
 
-  let button = document.querySelector("button");
-  button.addEventListener("click", () => {
-    mint();
-  });
-
   var contract = null;
   var abi = null;
   var contractAddress = "0xf75449c311af9ae61207fa9c8c35aed30b0871a8";
