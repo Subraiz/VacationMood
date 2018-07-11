@@ -6,6 +6,19 @@ window.onload = () => {
     });
 
   let btn = document.querySelector("button");
+
+  const randomQuantity = (min, max) => {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min));
+  };
+
+  const machine1 = new SlotMachine(element1);
+  const machine2 = new SlotMachine(element2);
+  const machine3 = new SlotMachine(element3);
+
+  function onComplete(active) {}
+
   btn.addEventListener("click", () => {
     wheelSound.play();
     setTimeout(() => machine1.shuffle(40, onComplete, randomize), 1000);
