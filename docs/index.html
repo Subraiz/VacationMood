@@ -73,6 +73,12 @@
                 <div><img src="./images/orange.png"></div>
                 <div><img src="./images/Macarons.png"></div>
                 <div><img src="./images/Ice Bar.png"></div>
+                <div><img src="./images/Macarons.png"></div>
+                <div><img src="./images/Flower.png"></div>
+                <div><img src="./images/Kiwi.png"></div>
+                <div><img src="./images/orange.png"></div>
+                <div><img src="./images/Macarons.png"></div>
+                <div><img src="./images/Ice Bar.png"></div>
 
               </div>
               </div>
@@ -87,6 +93,12 @@
                 <div><img src="./images/Macarons.png"></div>
                 <div><img src="./images/Flower.png"></div>
                 <div><img src="./images/Macarons.png"></div>
+                <div><img src="./images/Kiwi.png"></div>
+                <div><img src="./images/Ice Bar.png"></div>
+                <div><img src="./images/orange.png"></div>
+                <div><img src="./images/Macarons.png"></div>
+                <div><img src="./images/Flower.png"></div>
+                <div><img src="./images/Macarons.png"></div>
               </div>
             </div>
           </div>
@@ -94,6 +106,12 @@
           <div class="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-4">
             <div>
               <div id="machine3" class="randomizeMachine">
+                <div><img src="./images/orange.png"></div>
+                <div><img src="./images/Flower.png"></div>
+                <div><img src="./images/Ice Bar.png"></div>
+                <div><img src="./images/Macarons.png"></div>
+                <div><img src="./images/Kiwi.png"></div>
+                <div><img src="./images/Macarons.png"></div>
                 <div><img src="./images/orange.png"></div>
                 <div><img src="./images/Flower.png"></div>
                 <div><img src="./images/Ice Bar.png"></div>
@@ -134,9 +152,9 @@ const randomQuantity = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-const machine1 = new SlotMachine(element1, { active: randomQuantity(0, 3) });
-const machine2 = new SlotMachine(element2, { active: randomQuantity(0, 3) });
-const machine3 = new SlotMachine(element3, { active: randomQuantity(0, 3) });
+const machine1 = new SlotMachine(element1, { active: randomQuantity(0, 4) });
+const machine2 = new SlotMachine(element2, { active: randomQuantity(0, 4) });
+const machine3 = new SlotMachine(element3, { active: randomQuantity(0, 4) });
 
 function onComplete(active) {}
 </script>

@@ -148,48 +148,56 @@ body {
   color: #e5b572;
   padding: 0px;
   width: 120px;
-  height: 250px;
+  height: 290px;
   background: white;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
   display: block;
+  border-radius: 3px;
+  border: 2px solid grey;
 }
 
 #randomize .row > div.col-lg-4 > div {
   color: #e5b572;
   padding: 0px;
   width: 120px;
-  height: 250px;
+  height: 290px;
   background: white;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
   display: block;
+  border-radius: 3px;
+  border: 2px solid grey;
 }
 
 #randomize .row > div.col-md-4 > div {
   color: #e5b572;
-  padding: px;
+  padding: 0px;
   width: 120px;
-  height: 250px;
+  height: 290px;
   background: white;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
   display: block;
+  border-radius: 3px;
+  border: 2px solid grey;
 }
 
 #randomize .row > div.col-sm-4 > div {
   color: #e5b572;
   padding: 0px;
   width: 120px;
-  height: 250px;
+  height: 290px;
   background: white;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
   display: block;
+  border-radius: 3px;
+  border: 2px solid grey;
 }
 
 #randomize .row > div.col-xs-4 > div {
