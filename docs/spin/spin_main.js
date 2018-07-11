@@ -7,16 +7,6 @@ window.onload = () => {
 
   let btn = document.querySelector("button");
 
-  const randomQuantity = (min, max) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min));
-  };
-
-  const machine1 = new SlotMachine(element1, { active: randomQuantity(0, 4) });
-  const machine2 = new SlotMachine(element2, { active: randomQuantity(0, 4) });
-  const machine3 = new SlotMachine(element3, { active: randomQuantity(0, 4) });
-
   function onComplete(active) {}
 
   btn.addEventListener("click", () => {
