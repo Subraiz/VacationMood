@@ -26,6 +26,8 @@ body {
   margin: auto;
   left: 50%;
   margin-left: -200px;
+  top: 320px;
+  z-index: 3;
 }
 
 #confirmation p {
@@ -41,11 +43,11 @@ body {
 }
 
 .status.success {
-  display: none;
   background-color: white;
   border: 2px double green;
   width: 400px;
   height: auto;
+  display: none;
 }
 
 .status.error {
