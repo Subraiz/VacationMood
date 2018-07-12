@@ -204,7 +204,7 @@ body {
   color: #e5b572;
   padding: 3px;
   width: 110px;
-  height: 240px;
+  height: 220px;
   background: white;
   margin-left: 0;
   margin-right: auto;
@@ -238,7 +238,7 @@ body {
 .randomizeMachine {
   float: left;
   width: 100px;
-  height: 230px;
+  height: 210px;
 }
 
 #getTokenButton:hover {
