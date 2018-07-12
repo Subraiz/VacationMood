@@ -202,6 +202,7 @@ body {
 
 #randomize .row > div.col-xs-4 > div {
   color: #e5b572;
+  background-color: #d6e5ff;
   padding: 3px;
   width: 110px;
   height: 210px;
