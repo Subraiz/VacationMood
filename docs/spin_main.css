@@ -195,7 +195,7 @@ body {
   color: #e5b572;
   padding: 4px;
   width: 93px;
-  height: 165px;
+  height: 1px;
   background: white;
   margin-left: auto;
   margin-right: auto;
@@ -209,19 +209,19 @@ body {
   color: #e5b572;
   padding: 4px;
   width: 93px;
-  height: 165px;
+  height: 260px;
   background: white;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
   display: block;
   border-radius: 6px;
-  border: 2px solid #e5b572;
+  border: 2px solid red #e5b572;
 }
 
 #randomize .container img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 100%;
+  max-height: 200%;
 }
 
 button {
@@ -234,7 +234,7 @@ button {
 
 .randomizeMachine {
   width: 85px;
-  height: 150px;
+  height: 180px;
 }
 
 .btn:hover {
